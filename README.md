@@ -1,5 +1,5 @@
 # CIND-820
-Predicting The Price Of Used Cars Using Regression Analysis
+Predicting The Price Of Used Cars
 
 GitHub link: https://github.com/jiancii/CIND-820
 
