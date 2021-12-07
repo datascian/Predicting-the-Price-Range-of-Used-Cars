@@ -11,9 +11,13 @@ Files:
 
   Train Test Split: Split the data into pandemic data and prepandemic data. The prepandemic data will be used to train the models. The prepandemic data is split into train and test. 
 
-  XGboost: Model trained using XGBoost. The model had an overall accuracy of 68% using the prepandemic data. The performance went down to 54% when the model was used on the pandemic dataset. 
+  XGboost: Model trained using XGBoost. The model had an F1-score of 67.60% using the prepandemic data. The performance went down to 54.72% when the model was used on the pandemic dataset. 
 
-  Random Forest: Model trained using random forest. The model had an overall accuracy of 76% using the prepandemic data. The performance went down to 0.53% when the model was used on the pandemic dataset. 
+  Random Forest: Model trained using random forest. The model had an F1-score of 76.13% using the prepandemic data. The performance went down to 0.53.58% when the model was used on the pandemic dataset.
+  
+  Neural Networks: Model trained using neural networks. The model had an F1-score of 76.60% using the prepandemic data. The performance went down to 59.39% when the model was used on the pandemcid dataset.
+  
+  Retrained Neural Networks: The neural networks model was retrained with the combined pre-pandemic and pandemic dataset. The model had an F1-score of 74.71%. 
 
 Link to dataset:
 https://drive.google.com/drive/folders/1h3qnzHzk62q9C-J0KQCw4NqOaluTaIEX?usp=sharing  
