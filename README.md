@@ -1,5 +1,5 @@
 # CIND-820
-Predicting The Price Of Used Cars
+Predicting The Price Range Of Used Cars
 
 GitHub link: https://github.com/jiancii/CIND-820
 
