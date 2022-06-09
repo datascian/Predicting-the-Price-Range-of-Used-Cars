@@ -1,9 +1,28 @@
-# CIND-820
-Predicting The Price Range Of Used Cars
+### CIND-820
+# Predicting The Price Range Of Used Cars
 
-GitHub link: https://github.com/jiancii/CIND-820
+## Description:
 
-Files:
+## Objectives:
+
+## Steps:
+1. Data cleaning and preprocessing. Includes one-hot encoding of categorical variables
+2. Exploratory Data Analysis
+3. Train-test split
+4. Modelling:
+    4.1 XGboost
+    4.2 Random Forest
+    4.3 Neural Networks
+5. Comparison of model performance
+6. Conclusion
+
+## The Data:
+
+## Tools:
+
+## EDA:
+
+## Modelling:
 
   Preprocessing: Data cleaning and one-hot encoding of categorical variables
 
