@@ -9,7 +9,7 @@
 1) Data cleaning and preprocessing. Includes one-hot encoding of categorical variables 
 2) Exploratory Data Analysis 
 3) Train-test split 
-4) Modelling: 
+4) Modelling:  
     a) XGboost  
     b) Random Forest  
     c) Neural Networks  
