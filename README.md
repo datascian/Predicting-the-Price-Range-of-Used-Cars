@@ -61,7 +61,7 @@ This relationship between price to year and price to odometer was also visible i
 A frequency distribution of the prices was prepared, and it showed that the distribution is skewed to the right with a mean of $12,277 and median of $8,995. Majority of the used cars being sold have prices below $20,000.
 
 <p align="center">
-  <img width="40%" height="40%" src="images/price-distribution.jpg" />
+  <img width="100%" height="100%" src="images/price-distribution.jpg" />
 </p>
 
 ## Modelling
