@@ -64,21 +64,51 @@ A frequency distribution of the prices was prepared, and it showed that the dist
   <img width="100%" height="100%" src="images/price-distribution.jpg" />
 </p>
 
-## Modelling
+## Modelling & Evaluation
+The three models used were trained with 70% of the pre-pandemic data and then tested using the remaining 30% of the pre-pandemic data. The results were then compared using accuracy, precision, recall, F1 score, and Cohen’s Kappa as criteria. 
 
-  Preprocessing: Data cleaning and one-hot encoding of categorical variables
+**Accuracy** is the ratio of correctly predicted observations to the total observations. 
+**Precision** is the ratio of correctly predicted positive observations to the total predicted positive observations. Recall is the ratio of correctly predicted positive observations to the total actual positive observations. 
+**F1-score** is the weighted average of precision and recall. 
+**Cohen’s kappa** measures the proximity of the predicted classes to the actual classes when compared to a random classification. It is one of the best metrics for evaluating multi-class classifiers trained on unbalance datasets. The out put is normalized from 0 to 1. The closer the score is to 1, the better the classifier.
 
-  EDA: Exploratory data analysis to get a general understanding of the data and visualize the data as well as the relationships of the different variables. 
+Evaluation focused mainly on F1 score and Cohen’s Kappa as they are more reliable measures of multi-class classification problems.
 
-  Train Test Split: Split the data into pandemic data and prepandemic data. The prepandemic data will be used to train the models. The prepandemic data is split into train and test. 
+The table below summarizes the performance of the 3 models trained. Neural Networks had the best performance with an F1 score of 76.60 and a Cohen kappa of 0.7064.
 
-  XGboost: Model trained using XGBoost. The model had an F1-score of 67.60% using the prepandemic data. The performance went down to 54.72% when the model was used on the pandemic dataset. 
+<p align="center">
+  <img width="50%" height="50%" src="images/model-performance.jpg" />
+</p>
 
-  Random Forest: Model trained using random forest. The model had an F1-score of 76.13% using the prepandemic data. The performance went down to 0.53.58% when the model was used on the pandemic dataset.
-  
-  Neural Networks: Model trained using neural networks. The model had an F1-score of 76.60% using the prepandemic data. The performance went down to 59.39% when the model was used on the pandemcid dataset.
-  
-  Retrained Neural Networks: The neural networks model was retrained with the combined pre-pandemic and pandemic dataset. The model had an F1-score of 74.71%. 
+These models were then used on the pandemic dataset. Their performance is summarized in the table below. As we can see, their performance declined. 
+
+<p align="center">
+  <img width="50%" height="50%" src="images/model-performance-pandemic-data.jpg" />
+</p>
+
+The decline in their performance is summarized in the following table. Random forest had the greatest decline at 30%. 
+
+<p align="center">
+  <img width="50%" height="50%" src="images/performance-decline.jpg" />
+</p>
+
+This decline in performance in all the models indicate that there has been a dataset shift. Dataset shift occurs when there is a change in the distribution of data. This may have been caused by change of environments.
+
+There are various ways of addressing this dataset shift. For this paper, we will only employ model retraining. Since neural network had the best classification performance, it was selected the model for retraining. The model was retrained using the combined dataset with not distinction between pandemic and pre-pandemic data. The same split was used to get training set and the test set. The retrained model had an F1-score of 74.71% and Cohen’s kappa coefficient of 0.6834. These results are better than that of the model trained solely on pre-pandemic data. 
+
+<p align="center">
+  <img width="50%" height="50%" src="images/nn-retrained.jpg" />
+</p>
+
+## Conclusion
+3 models were trained to predict the price range of used cars: XGBoost, Random Forest, and Neural Networks.
+
+Neural Networks performed the best with an F1 score of 76.60 and Cohen kappa score of 0.7064. This means that the model performs well in predicting the price range of used cars. 
+
+When used on the pandemic dataset, the model's performance declined indicating a dataset shift. 
+
+Model retraining was employed to address the dataset shift. 
+
 
 
 
