@@ -47,7 +47,7 @@ The exploratory data analysis was done with target questions in mind. Some of th
 There is a direct correlation between price and year. The more higher (more recent) the year, the higher the price of the used car since it is relatively newer. On the other hand, there is an indirect correlation between price and odometer. The higher the odometer reading, the lower the price of the car. This because the odometer reading reflects how much the car has been used. This translates to the amount of wear and tear the car has endured. The more the car has been used, the lower the price. 
 
 <p align="center">
-  <img width="100%" height="100%" src="images/correlation.jpg" />
+  <img width="50%" height="50%" src="images/correlation.jpg" />
 </p>
 
 
